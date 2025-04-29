@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Shield, Phone, Mail, MapPin, Facebook, Instagram, Telegram } from 'lucide-react';
+import { Shield, Phone, Mail, MapPin, Facebook, Instagram } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -25,7 +25,12 @@ const Footer = () => {
                 <Instagram size={20} />
               </a>
               <a href="#" className="text-gray-400 hover:text-security-accent transition-colors">
-                <Telegram size={20} />
+                <span className="flex items-center justify-center w-5 h-5">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 20.5C16.6944 20.5 20.5 16.6944 20.5 12C20.5 7.30558 16.6944 3.5 12 3.5C7.30558 3.5 3.5 7.30558 3.5 12C3.5 16.6944 7.30558 20.5 12 20.5Z" stroke="currentColor" strokeWidth="1.5"/>
+                    <path d="M9 13.5L14.5 8M14.5 8H10.5M14.5 8V12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </span>
               </a>
             </div>
           </div>
